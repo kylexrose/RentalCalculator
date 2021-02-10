@@ -10,7 +10,7 @@
 </script>
 <body>
     <h1>Rental Investment Calculator</h1>
-    <form>
+    <div>
         <label for = "purchasePrice">Purchase Price<p id="purchasePriceInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="purchasePrice" name="purchasePrice" value=150000 onchange="init(document.getElementById('purchasePrice'))"><br>
         <label for = "closingCosts">Closing Costs<p id="closingCostsInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
@@ -37,7 +37,7 @@
         <input type="number" id="taxes" value=1500 onchange="init(document.getElementById('taxes'))"><br>
         <label for = "insurance">Annual Property Insurance<p id="insuranceInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="insurance" value=1000 onchange="init(document.getElementById('insurance'))"><br><br>
-    </form>
+    </div>
     <h1>Returns!</h1>
     <form action="">
         <label for = "cashFlow">Monthly Cash Flow</label><br>
