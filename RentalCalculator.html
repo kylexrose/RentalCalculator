@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rental Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <script>
     let num = null;
@@ -11,31 +12,31 @@
 <body>
     <h1>Rental Investment Calculator</h1>
     <div>
-        <label for = "purchasePrice">Purchase Price<p id="purchasePriceInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
+        <label for = "purchasePrice">Purchase Price<p class="invalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="purchasePrice" name="purchasePrice" value=150000 onchange="init(document.getElementById('purchasePrice'))"><br>
-        <label for = "closingCosts">Closing Costs<p id="closingCostsInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
+        <label for = "closingCosts">Closing Costs<p class="invalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="closingCosts" value=5000 onchange="init(document.getElementById('closingCosts').value)"><br>
-        <label for = "initialRenovation">Initial Renovation Cost<p id="initialRenovationInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
+        <label for = "initialRenovation">Initial Renovation Cost<p class="invalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="initialRenovation" value=0 onchange="init(document.getElementById('initialRenovation'))"><br>
-        <label for = "rent">Estimated Rent<p id="rentInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
+        <label for = "rent">Estimated Rent<p class="invalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="rent" value=1800 onchange="init(document.getElementById('rent'))"><br><br>
-        <label for = "principle">Loan Amount<p id="principleInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
+        <label for = "principle">Loan Amount<p class="invalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="principle" value=120000 onchange="init(document.getElementById('principle'))"><br>
-        <label for = "interestRate">Interest Rate %<p id="interestRateInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
+        <label for = "interestRate">Interest Rate %<p class="invalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="interestRate" value=7 onchange="init(document.getElementById('interestRate'))"><br>
-        <label for = "loanTerm">Loan Term (in years)<p id="loanTermInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
+        <label for = "loanTerm">Loan Term (in years)<p class="invalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="loanTerm" value =30 onchange="init(document.getElementById('loanTerm').value)"><br>
         <label for = "mortgagePayment">Monthly Mortgage Payment</label><br>
         <input type="text" id="mortgagePayment" disabled="true"><br><br>
-        <label for = "vacancy">Vacancy Rate %<p id="vacancyInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
+        <label for = "vacancy">Vacancy Rate %<p class="invalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="vacancy" value=8 onchange="init(document.getElementById('vacancy'))"><br>
-        <label for = "repairs">Repairs and Capital Expenditures (% of Rent)<p id="repairsInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
+        <label for = "repairs">Repairs and Capital Expenditures (% of Rent)<p class="invalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="repairs" value=13 onchange="init(document.getElementById('repairs'))"><br>
-        <label for = "propManFee">Property Management Fees (% of Rent)<p id="propManFeeInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
+        <label for = "propManFee">Property Management Fees (% of Rent)<p class="invalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="propManFee" value=10 onchange="init(document.getElementById('propManFee'))"><br>
-        <label for = "taxes">Annual Property Taxes<p id="taxesInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
+        <label for = "taxes">Annual Property Taxes<p class="invalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="taxes" value=1500 onchange="init(document.getElementById('taxes'))"><br>
-        <label for = "insurance">Annual Property Insurance<p id="insuranceInvalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
+        <label for = "insurance">Annual Property Insurance<p class="invalid" style="display:none; color:red"> *Please enter a valid number</p></label><br>
         <input type="number" id="insurance" value=1000 onchange="init(document.getElementById('insurance'))"><br><br>
     </div>
     <h1>Returns!</h1>
